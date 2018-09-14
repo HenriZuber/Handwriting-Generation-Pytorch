@@ -1,0 +1,9 @@
+version: '2.3'
+services:
+  boulot:
+    build: ./
+    ports:
+    - "8888:8888"
+    runtime: nvidia
+    volumes:
+    - ./:/opt/src
